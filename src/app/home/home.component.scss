@@ -1,0 +1,20 @@
+.container-fluid{
+  background-color: #e9ecef;
+  padding: 20px;
+}
+.card{
+  width:100%;
+  padding-top:50%;
+  a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

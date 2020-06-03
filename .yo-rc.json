@@ -1,0 +1,38 @@
+{
+  "generator-ngx-rocket": {
+    "version": "8.0.1",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "angular_image_search",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": false,
+      "lazy": true,
+      "angulartics": false,
+      "languages": [
+        "en-US"
+      ],
+      "tools": [
+        "prettier",
+        "hads",
+        "jest"
+      ],
+      "utility": [
+        "lodash"
+      ],
+      "deploy": "none",
+      "projectName": "angular-image-search",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}

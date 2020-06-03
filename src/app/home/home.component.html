@@ -1,0 +1,24 @@
+<div class="container-fluid text-center">
+  <div class="form-group">
+    <input placeholder="Flickr Image Search" class="form-control" type="search" [formControl]="searchText">
+  </div>
+  <app-loader [isLoading]="isLoading"></app-loader>
+  <div [hidden]="isLoading">
+    <div class="row">
+      <div class="col-lg-4 p-3" *ngFor="let image of imageList; let i = index">
+        <div class="card" #photoRef>
+          <a href="{{image.url}}_b.jpg" target="_blank" *ngIf="photoIsInView(i)">
+            <img src="{{image.url}}_m.jpg" title="{{image.title}}">
+          </a>
+        </div>
+      </div>
+      <div
+        class="search-results"
+        infiniteScroll
+        [infiniteScrollDistance]="2"
+        [infiniteScrollThrottle]="50"
+        (scrolled)="onScroll()">
+      </div>
+    </div>
+  </div>
+</div>
